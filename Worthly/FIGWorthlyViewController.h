@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FIGWorthlyViewController : UIViewController
+@interface FIGWorthlyViewController : UITableViewController<UITextFieldDelegate>
 
 @end

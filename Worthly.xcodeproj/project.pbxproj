@@ -21,6 +21,7 @@
 		5C76519C1899FB69006022F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C76517E1899FB69006022F7 /* UIKit.framework */; };
 		5C7651A41899FB69006022F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7651A21899FB69006022F7 /* InfoPlist.strings */; };
 		5C7651A61899FB69006022F7 /* WorthlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7651A51899FB69006022F7 /* WorthlyTests.m */; };
+		B7A7965DA5D2452691324D14 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E744016ED88942EBAE715B42 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		5C7651A11899FB69006022F7 /* WorthlyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorthlyTests-Info.plist"; sourceTree = "<group>"; };
 		5C7651A31899FB69006022F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C7651A51899FB69006022F7 /* WorthlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorthlyTests.m; sourceTree = "<group>"; };
+		E55395C5F6D44EC9BE4F23F6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E744016ED88942EBAE715B42 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				5C76517D1899FB69006022F7 /* CoreGraphics.framework in Frameworks */,
 				5C76517F1899FB69006022F7 /* UIKit.framework in Frameworks */,
 				5C76517B1899FB69006022F7 /* Foundation.framework in Frameworks */,
+				B7A7965DA5D2452691324D14 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,7 @@
 				5C76519F1899FB69006022F7 /* WorthlyTests */,
 				5C7651791899FB69006022F7 /* Frameworks */,
 				5C7651781899FB69006022F7 /* Products */,
+				E55395C5F6D44EC9BE4F23F6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +110,7 @@
 				5C76517C1899FB69006022F7 /* CoreGraphics.framework */,
 				5C76517E1899FB69006022F7 /* UIKit.framework */,
 				5C7651991899FB69006022F7 /* XCTest.framework */,
+				E744016ED88942EBAE715B42 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,13 +118,11 @@
 		5C7651801899FB69006022F7 /* Worthly */ = {
 			isa = PBXGroup;
 			children = (
-				5C7651891899FB69006022F7 /* FIGWorthlyAppDelegate.h */,
-				5C76518A1899FB69006022F7 /* FIGWorthlyAppDelegate.m */,
-				5C76518C1899FB69006022F7 /* Main.storyboard */,
-				5C76518F1899FB69006022F7 /* FIGWorthlyViewController.h */,
-				5C7651901899FB69006022F7 /* FIGWorthlyViewController.m */,
-				5C7651921899FB69006022F7 /* Images.xcassets */,
+				5C7651AF1899FC2A006022F7 /* Application */,
+				5C7651B11899FC4C006022F7 /* Controllers */,
+				5C7651B21899FC64006022F7 /* Resources */,
 				5C7651811899FB69006022F7 /* Supporting Files */,
+				5C7651B31899FC6E006022F7 /* Views */,
 			);
 			path = Worthly;
 			sourceTree = "<group>";
@@ -152,6 +156,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5C7651AF1899FC2A006022F7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5C7651891899FB69006022F7 /* FIGWorthlyAppDelegate.h */,
+				5C76518A1899FB69006022F7 /* FIGWorthlyAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		5C7651B11899FC4C006022F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C76518F1899FB69006022F7 /* FIGWorthlyViewController.h */,
+				5C7651901899FB69006022F7 /* FIGWorthlyViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5C7651B21899FC64006022F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C7651921899FB69006022F7 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5C7651B31899FC6E006022F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C76518C1899FB69006022F7 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C7651A91899FB69006022F7 /* Build configuration list for PBXNativeTarget "Worthly" */;
 			buildPhases = (
+				D255D24C9C0B49C9A5ADE11B /* Check Pods Manifest.lock */,
 				5C7651731899FB69006022F7 /* Sources */,
 				5C7651741899FB69006022F7 /* Frameworks */,
 				5C7651751899FB69006022F7 /* Resources */,
+				C422768224504AEBB3F0267A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +284,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C422768224504AEBB3F0267A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D255D24C9C0B49C9A5ADE11B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C7651731899FB69006022F7 /* Sources */ = {
@@ -376,6 +449,7 @@
 		};
 		5C7651AA1899FB69006022F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55395C5F6D44EC9BE4F23F6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +463,7 @@
 		};
 		5C7651AB1899FB69006022F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55395C5F6D44EC9BE4F23F6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +536,7 @@
 				5C7651AB1899FB69006022F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C7651AC1899FB69006022F7 /* Build configuration list for PBXNativeTarget "WorthlyTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +545,7 @@
 				5C7651AE1899FB69006022F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
