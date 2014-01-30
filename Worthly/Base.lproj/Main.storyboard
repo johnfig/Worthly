@@ -22,6 +22,13 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qRd-5f-l4f" id="B4L-UJ-8xq">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-Aa-Nvn">
+                                                    <rect key="frame" x="0.0" y="82" width="320" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.090196078430000007" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
@@ -100,11 +107,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="303" id="7HR-Qc-gXl">
-                                        <rect key="frame" x="0.0" y="266" width="320" height="303"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="305" id="7HR-Qc-gXl">
+                                        <rect key="frame" x="0.0" y="266" width="320" height="305"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7HR-Qc-gXl" id="KJW-RO-IHJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="302"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-f6-2K6">
@@ -129,6 +136,16 @@
                                                         <action selector="analyzeButtonPressed:" destination="aXQ-rZ-qP8" eventType="touchUpInside" id="RIV-mX-8ex"/>
                                                     </connections>
                                                 </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2P-XE-lWQ">
+                                                    <rect key="frame" x="20" y="97" width="160" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-zg-Bs6">
+                                                    <rect key="frame" x="140" y="131" width="160" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hQH-f6-2K6" firstAttribute="top" secondItem="KJW-RO-IHJ" secondAttribute="top" constant="20" symbolic="YES" id="H2D-vp-wuG"/>
@@ -152,9 +169,16 @@
                         <outlet property="costTextField" destination="mZm-kT-fOO" id="Zna-qp-fGW"/>
                         <outlet property="taskTextField" destination="8d5-yJ-iZv" id="i96-iF-sXq"/>
                         <outlet property="timeTextField" destination="0DL-qk-rmK" id="8P1-qr-Ebq"/>
+                        <outlet property="viewBottom" destination="8mp-zg-Bs6" id="rZ9-GK-7NC"/>
+                        <outlet property="viewTop" destination="w2P-XE-lWQ" id="fUP-GT-reX"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGF-wq-VkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="7pM-o1-Wnc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1253" y="580"/>
         </scene>

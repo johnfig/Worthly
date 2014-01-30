@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *taskTextField;
 @property (weak, nonatomic) IBOutlet UITextField *timeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *costTextField;
+@property (weak, nonatomic) IBOutlet UIView *viewTop;
+@property (weak, nonatomic) IBOutlet UIView *viewBottom;
 
 @end
 
@@ -27,10 +29,11 @@
   [self setPlaceholderTextAttributes:@"Chore/Ride/Fix/Etc." andTextField:self.taskTextField];
   [self setPlaceholderTextAttributes:@"Time to Complete" andTextField:self.timeTextField];
   [self setPlaceholderTextAttributes:@"Total Price Tag" andTextField:self.costTextField];
-  double delayInSeconds = 0.5;
+  double delayInSeconds = 1.0;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
   dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
     [self.taskTextField becomeFirstResponder];
+    [self animateView];
   });
 }
 
@@ -85,6 +88,21 @@
                                             NSKernAttributeName : @(4.0f)
                                             }];
   textField.attributedPlaceholder = attributedString;
+}
+
+- (void)animateView {
+  [UIView animateWithDuration:0.5
+                        delay:0.5
+                      options: UIViewAnimationOptionBeginFromCurrentState
+                   animations:^{
+                     self.viewTop.backgroundColor = [UIColor colorWithRed:0.182 green:0.284 blue:0.359 alpha:0.9];
+                     self.viewBottom.backgroundColor = [UIColor colorWithRed:0.182 green:0.284 blue:0.359 alpha:0.9];
+//                     self.viewTop.frame = CGRectMake(0, 100.0f, 0, 0);
+//                     self.viewBottom.frame = CGRectMake(0, 100.0f, 0, 0);
+                   }
+                   completion:^(BOOL finished){
+                     NSLog(@"Done!");
+                   }];
 }
 
 @end
