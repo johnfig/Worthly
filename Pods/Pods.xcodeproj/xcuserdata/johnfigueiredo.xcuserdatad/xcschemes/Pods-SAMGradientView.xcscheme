@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98AFCA0F94394ADD841D19C2"
-               BuildableName = "libPods-SVPullToRefresh.a"
-               BlueprintName = "Pods-SVPullToRefresh"
+               BlueprintIdentifier = "2370547C4F594F5BBF11CD85"
+               BuildableName = "libPods-SAMGradientView.a"
+               BlueprintName = "Pods-SAMGradientView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

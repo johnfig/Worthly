@@ -9,17 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SAMGradientView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-SVProgressHUD.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SVPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>43E263D2B5E34A1FBAAF5BCB</key>
+		<key>0A5E502CC1EF4DF588CD6502</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B1BDAF12BFF4053B0C249D5</key>
+		<key>2370547C4F594F5BBF11CD85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98AFCA0F94394ADD841D19C2</key>
+		<key>92A1CD8A37524B8380A88D67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A83B56E0155A48D2982A14BD</key>
+		<key>BF69AE67679A443D9FC0C313</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D07DCD4289234B56A9022E00</key>
+		<key>D0DAE77C225F480F9A815020</key>
 		<dict>
 			<key>primary</key>
 			<true/>

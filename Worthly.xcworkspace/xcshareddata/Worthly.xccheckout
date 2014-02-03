@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55D9C3F1-20C1-4DDF-AE93-9CA2D767E597</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Worthly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>56C21573-1EB5-4D42-AAB3-E38E27FB8BEC</key>
+		<string>ssh://github.com/johnfig/Worthly.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Worthly.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>56C21573-1EB5-4D42-AAB3-E38E27FB8BEC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/johnfig/Worthly.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>56C21573-1EB5-4D42-AAB3-E38E27FB8BEC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56C21573-1EB5-4D42-AAB3-E38E27FB8BEC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Worthly</string>
+		</dict>
+	</array>
+</dict>
+</plist>
